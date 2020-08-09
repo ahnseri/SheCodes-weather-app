@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ebd6470ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>SheCodes+ Week 5 Homework: Search Engine (Weather APP)</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <header class="showDateTime" id="display-date-time"></header>
+          <section class="displayWeather">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="localCityWeather">
+                  <i class="fas fa-cloud-sun"></i>
+
+                  <br />
+                  <span id="display-city-name"> </span>
+                </h1>
+              </div>
+              <div class="col-6">
+                <div class="float-left">
+                  <span class="currentTemp" id="current-temp"></span>
+                  <span class="units" id="units">°C</span>
+                  <p class="weatherDes" id="weather-des"></p>
+                </div>
+              </div>
+              <div class="col-6">
+                <section class="detailedWeatherDes">
+                  <ul>
+                    <li>
+                      Feels like:
+                      <span id="feels-like"> </span>°C
+                    </li>
+                    <li>Humidity: <span id="humidity"> </span>%</li>
+                    <li>
+                      Wind:
+                      <span id="wind-speed"> </span>km/h
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </section>
+
+          <section class="changeCity">
+            <form id="change-city-form">
+              <div class="form-row">
+                <div class="col-7">
+                  <input
+                    type="search"
+                    class="form-control"
+                    placeholder="Change city"
+                    autocomplete="off"
+                    id="search-city"
+                  />
+                </div>
+
+                <div class="col-5">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="search-button"
+                    >
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="current-location"
+                    >
+                      <i class="fas fa-map-marker-alt"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="celsius-btn"
+                    >
+                      <a href="#">°C</a>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="fahrenheit-btn"
+                    >
+                      <a href="#">°F</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="tempNextFiveDays">
+            <div class="row">
+              <div class="col-5">
+                <p>
+                  Thursday, Jul 30
+                </p>
+              </div>
+              <div class="col-3">
+                <i class="fas fa-sun"></i>
+              </div>
+              <div class="col-4"><strong>27°C </strong>/ 16°C</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <p>
+                  Friday, Jul 31
+                </p>
+              </div>
+              <div class="col-3">
+                <i class="fas fa-sun"></i>
+              </div>
+              <div class="col-4"><strong>28°C </strong> / 17°C</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <p>
+                  Saturday, Aug 1
+                </p>
+              </div>
+              <div class="col-3">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <div class="col-4"><strong>28°C</strong> / 18°C</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <p>
+                  Sunday, Aug 2
+                </p>
+              </div>
+              <div class="col-3">
+                <i class="fas fa-poo-storm"></i>
+              </div>
+              <div class="col-4"><strong>25°C</strong> / 17°C</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <p>
+                  Monday, Aug 3
+                </p>
+              </div>
+              <div class="col-3">
+                <i class="fas fa-poo-storm"></i>
+              </div>
+              <div class="col-4"><strong>25°C</strong> / 16°C</div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer>
+        Coded by: Sherry-Anne Yu (SheCodes+ WK5)
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
