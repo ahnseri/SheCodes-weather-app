@@ -1,0 +1,141 @@
+body {
+  color: #363636;
+}
+
+header.showDateTime {
+  text-align: center;
+  font-size: small;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 .fa-cloud-sun {
+  font-size: 60px;
+}
+
+h1 {
+  padding: 0px;
+  margin: 0 auto;
+}
+
+section.displayWeather {
+  padding-top: 20px;
+  border-radius: 15px;
+  background: #f8faf24d;
+  margin-bottom: 5px;
+}
+
+span.currentTemp {
+  font-size: 60px;
+  font-weight: 600;
+  padding: 0px 0px 0px 70px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+span.units {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section.changeCity {
+  margin: 0 auto;
+  padding: 20px 15px 20px 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+section.tempNextFiveDays {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+}
+
+.card {
+  padding: 30px 10px;
+  margin: 40px auto;
+  border: none;
+  border-radius: 15px;
+  max-width: 500px;
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+}
+
+.card-body {
+  font-family: "Jost", sans-serif;
+}
+
+.localCityWeather {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-left: 70px;
+}
+
+.weatherDes {
+  font-size: small;
+  padding-left: 70px;
+  position: relative;
+  bottom: 20px;
+  margin: 0 auto;
+}
+
+.detailedWeatherDes {
+  font-size: small;
+  padding-top: 18px;
+  padding-left: 30px;
+}
+
+.btn-secondary {
+  background: #84a9ac;
+  border-color: #84a9ac;
+}
+
+.btn-secondary:hover {
+  background: #3b6978;
+  border-color: #3b6978;
+}
+
+.tempNextFiveDays i {
+  margin: 0 auto;
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+.fa-cloud-sun {
+  color: #febf63;
+}
+
+.fa-sun {
+  color: #ffa931;
+}
+
+.fa-poo-storm {
+  color: #383e56;
+}
+
+#weather-des {
+  text-transform: capitalize;
+}
