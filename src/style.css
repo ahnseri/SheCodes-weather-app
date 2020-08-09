@@ -70,6 +70,16 @@ footer {
   font-size: small;
 }
 
+footer a {
+  color: #84a9ac;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #3b6978;
+  text-decoration: none;
+}
+
 .card {
   padding: 30px 10px;
   margin: 40px auto;
